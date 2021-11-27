@@ -20,4 +20,5 @@ from django.urls.conf import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('loginChat.urls')),
+    path('auth/', include('drf_social_oauth2.urls', namespace='drf')),
 ]

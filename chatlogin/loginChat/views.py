@@ -7,9 +7,8 @@ from rest_framework.response import Response
 class HomeView(TemplateView):
     template_name = 'index.html'
 
-# s3cr3trecetas - recetasAdmin
-
 class Autenticado(APIView):
     def get(self, request):
-        data = {"ingrediente": 'papa'}
+        data = {"estado": 'Autenticado'}
         return Response(data)
+

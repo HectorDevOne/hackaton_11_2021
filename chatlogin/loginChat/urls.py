@@ -8,7 +8,7 @@ app_name = 'loginChat'
 
 urlpatterns = [
     path('', HomeView.as_view()), 
-    path('auth/',views.Autenticado.as_view(), name='auth' ),
+    path('authtrue/',views.Autenticado.as_view(), name='authtrue' ),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     
